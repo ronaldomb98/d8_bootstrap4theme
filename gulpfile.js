@@ -42,7 +42,7 @@ gulp.task('watch', function(){
 
     gulp.watch('./themes/custom/bootstraptheme/sass/**/*.scss', ['sass']);
     gulp.watch('./themes/custom/bootstraptheme/lib/*.js', ['uglify']);
-    gulp.watch(['./themes/custom/bootstraptheme/style.css', './themes/custom/bootstraptheme/**/*.twig', './themes/custom/bootstraptheme/js/*.js'], function (files){
+    gulp.watch(['./themes/custom/bootstraptheme/css/style.css', './themes/custom/bootstraptheme/**/*.twig', './themes/custom/bootstraptheme/js/*.js'], function (files){
         livereload.changed(files)
     });
 });
